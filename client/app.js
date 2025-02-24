@@ -10,7 +10,7 @@ myApp.controller("MainController", function ($scope, $http) {
   $scope.getServerData = function () {
     // Example: calls the /api/users endpoint on your Node.js server
     $http
-      .get("http://localhost:3000/api/users")
+      .get("https://localhost:3000/api/users")
       .then(function (response) {
         $scope.serverData = response.data;
       })
